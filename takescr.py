@@ -21,8 +21,7 @@ def _getscr(_url,_file):
         chrome_options.add_argument("--window-size=%s" % WINDOW_SIZE)
         chrome_options.binary_location = CHROME_PATH
 
-
-        verbose = 1
+ 
         driver = webdriver.Chrome(
                 executable_path=CHROMEDRIVER_PATH,
                 options=chrome_options
